@@ -1,11 +1,9 @@
 <?php
-$test = "works";
-
-$con = mysql_connect('br-cdbr-azure-south-a.cloudapp.net', 'b1d71881ca3bdb', '06bea04b');
-
-if(!$con) die("no conection " . mysql_error());
-
+require_once 'PHPlib/function_lib.php';
+if(isset($_SESSION['log_token'])){
+	session_start();
+}
 ?>
 <html>
-	<h1><?php echo($test); ?></h1>
+	<h1></h1>
 </html>

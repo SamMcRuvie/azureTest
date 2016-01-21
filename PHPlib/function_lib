@@ -1,0 +1,15 @@
+<?php
+function string_gen($strLen){
+	$charSet ='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	$charSetLen = strlen($charSet);
+	$str = "";
+	for($i = 0; $i < $strLen; $i++){
+		$str .= $charSet[rand(0, $charSetLen - 1)];
+	}
+
+	return $str ;
+}
+
+
+
+?>
